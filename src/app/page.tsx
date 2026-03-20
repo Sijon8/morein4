@@ -1,7 +1,7 @@
 import MoreInFourEngine from '@/components/MoreInFourEngine';
 import ScholarshipEngine from '@/components/ScholarshipValuator';
 import ServiceAndSkills from '@/components/ServiceAndSkills';
-
+import CareerTimelineTracker from '@/components/CareerTimelineTracker';
 export default function Home() {
   return (
     <main className="bg-[#0b0f19] min-h-screen text-slate-200 selection:bg-blue-500 selection:text-white">
@@ -10,14 +10,16 @@ export default function Home() {
       <nav className="p-6 border-b border-slate-800/50 flex justify-between items-center bg-[#0b0f19]/80 backdrop-blur-md sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-black text-white">4</div>
-          <span className="font-black tracking-tighter uppercase italic text-xl text-white">MoreInFour</span>
+          <span className="font-black tracking-tighter italic text-xl text-white">MoreInFour</span>
         </div>
         <div className="flex gap-4 text-[10px] font-mono uppercase tracking-widest text-slate-500">
-          <span className="hover:text-white cursor-pointer transition-colors">Wealth Engine</span>
+          <span className="hover:text-white cursor-pointer transition-colors">SERVICE</span>
           <span className="hidden md:inline">/</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Education Hack</span>
+          <span className="hover:text-white cursor-pointer transition-colors">SCHOLARSHIP</span>
           <span className="hidden md:inline">/</span>
-          <span className="hover:text-white cursor-pointer transition-colors">The 1%</span>
+          <span className="hover:text-white cursor-pointer transition-colors">SAVINGS</span>
+          <span className="hidden md:inline">/</span>
+          <span className="hover:text-white cursor-pointer transition-colors">SKILLS</span>
         </div>
       </nav>
 
@@ -42,6 +44,15 @@ export default function Home() {
         <section id="skills-service">
           <ServiceAndSkills />
         </section>
+
+
+        <hr className="border-slate-800 max-w-7xl mx-auto" />
+
+        <section id="career-tracker">
+          <CareerTimelineTracker />
+        </section>
+
+
 
       </div>
 
